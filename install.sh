@@ -3,7 +3,7 @@ cd ~/
 mkdir scripts tools
 
 # install apt Packages
-sudo apt install -y python3 python3-venv python3-pip seclists curl wget enum4linux ffuf gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf dirsearch exploitdb redis-tools snmp-mibs-downloader gdb 
+sudo apt install -y python3 python3-venv python3-pip seclists curl wget enum4linux ffuf gobuster nbtscan nikto nmap onesixtyone oscanner smbclient smbmap smtp-user-enum snmp sslscan sipvicious tnscmd10g whatweb wkhtmltopdf dirsearch exploitdb redis-tools snmp-mibs-downloader gdb mingw-w64
 
 # install gem packages
 gem install evil-winrm
