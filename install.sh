@@ -8,6 +8,15 @@ sudo apt install -y python3 python3-venv python3-pip seclists curl wget enum4lin
 # install gem packages
 gem install evil-winrm
 
+# Impacket Module not found Fix
+cd ~
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python get-pip.py
+pip install -U setuptools
+pip install impacket --upgrade
+pip2 install -U setuptools
+pip2 install impacket --upgrade
+
 # install pip3 packages
 pip3 install updog pyftpdlib
 
@@ -52,3 +61,17 @@ wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 
 # download suid3num
 wget https://raw.githubusercontent.com/Anon-Exploiter/SUID3NUM/master/suid3num.py
+
+# Intall Impacket
+sudo git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
+sudo pip3 install -r /opt/impacket/requirements.txt
+sudo python3 /opt/impacket/setup.py install
+
+# Impacket Module not found Fix
+cd ~
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python get-pip.py
+pip install -U setuptools
+pip install impacket --upgrade
+pip2 install -U setuptools
+pip2 install impacket --upgrade
